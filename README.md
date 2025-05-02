@@ -52,9 +52,9 @@ You can play the stream simply by pasting the signed URL into a smartphone or PC
 | Metric | Peak | Average |
 |--------|------|---------|
 | CPU (user+sys) | ~30 % | 12 % |
-| RAM used       | ~480 MiB | 450 MiB |
+| RAM used       | ~1 GiB | 450 MiB |
 
-![CPU vs RAM](metrics/cpu_ram_dualaxis.png)
+![CPU vs RAM](metrics/cpu_ram_usage.png)
 
 Please refer to [metrics/perf_20250502.csv](metrics/perf_20250502.csv) for the full CSV.
 
