@@ -51,12 +51,13 @@ You can play the stream simply by pasting the signed URL into a smartphone or PC
 
 | Metric | Peak | Average |
 |--------|------|---------|
-| CPU (user+sys) | ~30 % | 12 % |
-| RAM used       | ~1 GiB | 450 MiB |
+| CPU (user+sys) | ~30 % | 15 % |
+| RAM used       | ~990 GiB | 940 MiB |
 
 ![CPU vs RAM](metrics/cpu_ram_usage.png)
 
-Please refer to [metrics/perf_20250502.csv](metrics/perf_20250502.csv) for the full CSV.
+*Measurement method: 10 minute sampling with `dstat -tcmndr 1 600`, CSV visualized in Python.
+*Please refer to [metrics/perf_20250502.csv](metrics/perf_20250502.csv) for the full CSV.
 
 ## TODO
 - Measure latency with the hardware-encoded (v4l2h264enc) pipeline
