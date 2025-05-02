@@ -25,7 +25,7 @@ gst-launch-1.0 -e \
 ```
 
 ## How to watch (HLS)
-# 1. Get DataEndpoint for HLS
+ 1. Get DataEndpoint for HLS
 ```bash
 ENDPOINT=$(aws kinesisvideo get-data-endpoint \
   --stream-name sdv-pi4-frontcam-20250430 \
@@ -34,7 +34,7 @@ ENDPOINT=$(aws kinesisvideo get-data-endpoint \
   --query DataEndpoint --output text)
 ```
 
-# 2. Get signed HLS URL (valid 30 min)
+ 2. Get signed HLS URL (valid 30 min)
 ```bash
 aws kinesis-video-archived-media \
   --endpoint-url $ENDPOINT \
