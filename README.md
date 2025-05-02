@@ -47,6 +47,17 @@ aws kinesis-video-archived-media \
 
 You can play the stream simply by pasting the signed URL into a smartphone or PC browser.
 
+## Performance (HLS SW-encode)
+
+| Metric | Peak | Average |
+|--------|------|---------|
+| CPU (user+sys) | ~30 % | 12 % |
+| RAM used       | ~480 MiB | 450 MiB |
+
+![CPU vs RAM](metrics/cpu_ram_dualaxis.png)
+
+Please refer to [metrics/perf_20250502.csv](metrics/perf_20250502.csv) for the full CSV.
+
 ## TODO
 - Measure latency with the hardware-encoded (v4l2h264enc) pipeline
 - Compare results with the WebRTC (KVS Signaling) version
